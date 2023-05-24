@@ -10,5 +10,5 @@ values = list(data.values())
 fig, ax = bc.bar_init(squares, values)
 
 while True:
-    mp.play_round(player_spot, data)
+    player_spot, data = mp.play_round(player_spot, data)
     bc.update_chart(squares, data, ax)
