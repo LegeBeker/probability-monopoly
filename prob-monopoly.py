@@ -23,6 +23,9 @@ while True:
     plt.xlabel("Amount landed on square")
     plt.ylabel("Monopoly squares")
     plt.title("Land probability Monopoly")
-    plt.draw()
     plt.pause(0.1)
     ax.clear()
+    if not plt.get_fignums():
+        break
+
+plt.show()
